@@ -1,40 +1,19 @@
-number_divisible_by_3 = lambda num: num % 3 == 0
-number_divisible_by_5 = lambda num: num % 5 == 0
-
-def FizzBuzz_for(number_of_iterations):
-    
-    for number in range(1, number_of_iterations+1):
-        if number_divisible_by_3(number) and number_divisible_by_5(number):
-            print("FizzBuzz")
-        elif number_divisible_by_3(number):
-            print("Fizz")
-        elif number_divisible_by_5(number):
-            print("Buzz")
-        else:
-            print(number)
+def fizzbuzz(number_of_iterations):
+    for num in range(1, number_of_iterations+1):
+        print('Fizz'*(num%3==0) + 'Buzz'*(num%5==0) or num)
 
 try:
-    FizzBuzz_for(15)
+    fizzbuzz(15)
 except Exception as e:
     print(e)
- 
-# fizzbuzz solution using recursion
-def FizzBuzz_while(number_of_iterations):
+
+def fizzbuzz_while(number_of_iterations):
     counter = 1
     while counter <= number_of_iterations:
-        if number_divisible_by_3(counter) and number_divisible_by_5(counter):
-            print("FizzBuzz")
-        elif number_divisible_by_3(counter):
-            print("Fizz")
-        elif number_divisible_by_5(counter):
-            print("Buzz")
-        else:
-            print(counter)
+        print('Fizz'*(counter%3==0) + 'Buzz'*(counter%5==0) or counter)
         counter += 1
-           
-        
-    
+
 try:
-    FizzBuzz_while(15)
+    fizzbuzz_while(15)
 except Exception as e:
-    print(e)    
+    print(e)
