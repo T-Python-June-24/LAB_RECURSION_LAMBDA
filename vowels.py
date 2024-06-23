@@ -1,3 +1,5 @@
+
+#LAB (1)
 str = "I love python"
 vowels = ['a', 'e', 'i', 'o', 'u']
 
@@ -8,9 +10,9 @@ print(len(vowelsList))
 
 
 
-
+#LAB (2)
 numbers = [40,35, 10, 15, 20]
-def multply(num):
-    return num * num
-numbersMultiplication = map(multply,numbers)
+
+numbersMultiplication = map(lambda num: num **2 ,numbers)
 print(list(numbersMultiplication))
+
