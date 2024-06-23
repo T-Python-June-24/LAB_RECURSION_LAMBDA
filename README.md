@@ -10,7 +10,7 @@
 
 #### create a new list containing each number from the previous list mutliplied by itself.
 #### print the new list.
-#### Hint: use map() with a lambda funciton
+#### Note: use `map()` with a `lambda funciton`
 
 # Bonus (solve in a new file)
 
