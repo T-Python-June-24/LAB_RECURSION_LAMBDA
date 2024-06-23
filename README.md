@@ -6,15 +6,6 @@
 #### Example: given the phrase `I love python` , it should return : `4` 
 
 
-
-
-## 1) باستخدام العودية، إذا أعطيت كلمة/عبارة، قم بإرجاع عدد حروف العلة (a,e,i,o,u) الموجودة في تلك العبارة أو الكلمة:
-
-#### ملاحظة: يجب أن تكون الدالة قادرة على حساب عدد حروف العلة بغض النظر عما إذا كانت صغيرة أو كبيرة. 
-#### مثال: بالنظر إلى العبارة `I love python`، يجب أن تعود: `4`
-
-
-
 ## 2) Given a list of numbers : `[40,35, 10, 15, 20]`
 
 #### create a new list containing each number from the previous list mutliplied by itself.
