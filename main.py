@@ -19,14 +19,12 @@ def vowels_recursion(word):
         int: The number of vowels in the word.
     """
     vowels_letters = 'aeiouAEIOU'
-    first_letter = word[0]
-    rest_of_the_word = word[1:]
     if word == "":
         return 0
-    elif first_letter not in vowels_letters:
-        return vowels_recursion(rest_of_the_word)
+    elif word[0] not in vowels_letters:
+        return vowels_recursion(word[1:])
     else: # the 1 here is for counting the first letter whether it's a vowel or not
-        return 1 + vowels_recursion(rest_of_the_word)
+        return 1 + vowels_recursion(word[1:])
     
 try:  
     print(vowels_recursion("I love python"))
