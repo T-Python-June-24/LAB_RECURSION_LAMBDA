@@ -1,12 +1,26 @@
 
 #LAB (1)
-str = "I love python"
+word = "I love python"
 vowels = ['a', 'e', 'i', 'o', 'u']
 
-vowelsFound = filter(lambda char: char.lower() in vowels, str)
-vowelsList = list(vowelsFound)
-print(len(vowelsList))
+def vowelsIn(word):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    if word == '':
+        return ''
+    elif word[0].lower() in vowels and word != '':
+        return word[0] + vowelsIn(word[1:])
+    else:
+        return vowelsIn(word[1:])
+    
+total_vowels = len(vowelsIn(word))           
+print(f"The total vowels in ({word}) is {total_vowels} vowels.")
 
+
+# Another way:
+
+# vowelsFound = filter(lambda char: char.lower() in vowels, str)
+# vowelsList = list(vowelsFound)
+# print(len(vowelsList))
 
 
 
